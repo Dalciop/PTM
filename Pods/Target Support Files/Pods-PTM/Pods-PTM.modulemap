@@ -1,0 +1,6 @@
+framework module Pods_PTM {
+  umbrella header "Pods-PTM-umbrella.h"
+
+  export *
+  module * { export * }
+}

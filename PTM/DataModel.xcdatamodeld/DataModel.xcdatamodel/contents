@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G1974" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Accounts" representedClassName="Accounts" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="login" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <relationship name="site" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sites" inverseName="account" inverseEntity="Sites"/>
+    </entity>
+    <entity name="Sites" representedClassName="Sites" syncable="YES" codeGenerationType="class">
+        <attribute name="baseURL" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="site" optional="YES" attributeType="String"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Accounts" inverseName="site" inverseEntity="Accounts"/>
+    </entity>
+    <elements>
+        <element name="Sites" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="Accounts" positionX="-63" positionY="9" width="128" height="89"/>
+    </elements>
+</model>

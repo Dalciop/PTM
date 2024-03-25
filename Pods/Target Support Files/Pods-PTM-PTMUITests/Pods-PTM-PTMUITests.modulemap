@@ -1,0 +1,6 @@
+framework module Pods_PTM_PTMUITests {
+  umbrella header "Pods-PTM-PTMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
